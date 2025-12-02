@@ -1,0 +1,37 @@
+classDiagram
+    direction LR
+
+    class Produto {
+        + id: int
+        + nome: str
+        + preco: float
+        + quantidade: int
+        + toString(): str
+    }
+
+    class ProdutoController {
+        - produtos: list<Produto>
+        - proximo_id: int
+        + adicionar(produto): void
+        + listar(): list<Produto>
+        + atualizar(id, produto_atualizado): bool
+        + remover(id): bool
+    }
+
+    class ProdutoView {
+        - controller: ProdutoController
+        - root: tk.Tk
+        # tabela: ttk.Treeview
+        + __init__(root): void
+        + adicionar(): void
+        + listar(): void
+        + atualizar(): void
+        + remover(): void
+        + preencher_campos(event): void
+        + limpar_campos(): void
+        + filtrar_por_nome(event): void
+    }
+
+    ProdutoController "1" *-- "*" Produto : contém
+
+    ProdutoView "1" o-- "1" ProdutoController : interage com
