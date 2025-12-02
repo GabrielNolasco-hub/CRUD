@@ -231,4 +231,4 @@ class ProdutoView:
 if __name__ == "__main__":
     root = tk.Tk()
     app = ProdutoView(root)
-    root.mainloop
+    root.mainloop()
