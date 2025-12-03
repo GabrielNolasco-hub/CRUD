@@ -19,7 +19,7 @@ Centraliza toda a lógica de funcionamento:
 - Controla a geração automática de IDs
 - Executa as operações de adicionar, listar, atualizar e remover
 - Realiza busca de produtos por nome
-- Inclui funções auxiliares para tratar valores monetários no formato brasileiro
+- Inclui funções auxiliares para tratar valores monetários no formato brasileiro.
 
 ### View — ProdutoView
 Interface gráfica construída com Tkinter:
