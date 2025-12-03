@@ -1,4 +1,4 @@
-# Relatório CRU
+# Relatório CRUD
 
 Este projeto implementa uma aplicação desktop para gerenciamento de produtos utilizando Python e Tkinter. A estrutura foi organizada de maneira modular, inspirada no padrão MVC, permitindo fácil manutenção e expansão.
 
